@@ -1,4 +1,4 @@
-package myTestProject.Config;
+package myTestProject.config;
 
 import java.io.IOException;
 import java.net.URL;

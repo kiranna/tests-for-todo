@@ -1,4 +1,4 @@
-package myTestProject.Config;
+package myTestProject.config;
 
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.Platform;
