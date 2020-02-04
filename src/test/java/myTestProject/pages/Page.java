@@ -1,5 +1,7 @@
 package myTestProject.pages;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
@@ -41,10 +43,9 @@ public abstract class Page extends BaseVariables {
 	}
 	
 	public boolean isElementPresent(By by){ 
-	    if(driver.findElements(by).size() > 0) { 
-	    	return true; 
-	    } else { 
-	    	return false; 
-	    } 
+		driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
+		boolean result = driver.findElements(by).size() > 0;
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		return result;
 	}
 }

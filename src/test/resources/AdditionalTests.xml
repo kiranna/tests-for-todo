@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="AdditionalTests" verbose="5">
+  <test name="AdditionalTests">
+    <classes>
+      <class name="myTestProject.DeleteAllTests"/>
+      <class name="myTestProject.SortTests"/>
+    </classes>
+  </test>  
+</suite>

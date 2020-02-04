@@ -32,11 +32,6 @@ public class TestNgTestBase extends BaseVariables{
 		wait = new WebDriverWait(driver, 5);
 	}
 
-//	@BeforeMethod
-//	public void initWebDriver() {
-//		driver = WebDriverPool.DEFAULT.getDriver(gridHubUrl, capabilities);
-//	}
-
 	@AfterSuite(alwaysRun = true)
 	public void tearDown() {
 		WebDriverPool.DEFAULT.dismissAll();
